@@ -6,6 +6,7 @@ import com.yh.king.service.IUmsRoleService;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * <p>
@@ -17,6 +18,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 @Primary
+@Transactional
 public class UmsRoleServiceImpl extends ServiceImpl<UmsRoleMapper, UmsRole> implements IUmsRoleService {
 
 }

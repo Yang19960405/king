@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8082
   servlet:
     context-path: /
 
@@ -14,7 +14,10 @@ spring:
     time-zone: GMT+8
     serialization:
       write-dates-as-timestamps: false
-
+  redis:
+    host: www.yhverygood.top
+    password:
+    port: 6379
 mybatis-plus:
   configuration:
     map-underscore-to-camel-case: true
